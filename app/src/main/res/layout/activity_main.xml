@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/nextPageBtn"
+        android:onClick="nextPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nextPage" />
+
+    <Button
+        android:id="@+id/deleteFragmentButton"
+        android:onClick="deleteFragmentButto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="deleteFragmentButton" />
+
+    <Button
+        android:id="@+id/addFragmentButton"
+        android:onClick="addFragmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="addFragmentButton" />
+
+    <Button
+        android:id="@+id/onClickButtonLayout"
+        android:onClick="onClickButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="onClickButtonLayout" />
+
+
+    <Button
+        android:id="@+id/buttonUpBt"
+        android:onClick="onClickButtonUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="onClickButtonUp" />
+
+    <FrameLayout
+        android:id="@+id/buttonFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <fragment
+            android:id="@+id/buttonFragment"
+            android:name="com.haya.fragmentjava.ButtonFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_gravity="right|bottom" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+    </FrameLayout>
+
+</LinearLayout>
